@@ -1,0 +1,10 @@
+.home {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(119, 233, 195);
+}
+.body {
+    text-justify: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}

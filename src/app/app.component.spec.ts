@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'HW2-service'`, () => {
+  it(`should have as title 'HW1-Portfolio-angularProject'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('HW2-service');
+    expect(app.title).toEqual('HW1-Portfolio-angularProject');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('HW2-service app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('HW1-Portfolio-angularProject app is running!');
   });
 });
