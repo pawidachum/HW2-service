@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-my-skill',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-skill.component.css']
 })
 export class MySkillComponent implements OnInit {
-
-  constructor() { }
+  myHTML: string;
+  constructor(private backendService: BackendService) { }
 
   ngOnInit(): void {
+    this.backendService.getSkill();
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-my-experience',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyExperienceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private backendService: BackendService) { }
 
   ngOnInit(): void {
+    this.backendService.getExp();
   }
 
 }

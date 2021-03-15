@@ -13,8 +13,9 @@ export class HomeComponent implements OnInit {
   Homes: string;
 
   ngOnInit(): void {
+    this.backendService.getHome();
     
   }
-  constructor () {BackendService};
+  constructor (private backendService: BackendService) {};
 
 }

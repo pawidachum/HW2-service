@@ -18,7 +18,8 @@ export class AppComponent implements OnInit {
   ngOnInit (): void {
     // let somethingHome = this.backendService.getHome();
     // console.log(somethingHome);
-    this.backendService.getHome();
+
+
   }
 }
 ;
