@@ -1,3 +1,4 @@
+import { ViewEncapsulation } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BackendService } from '../backend.service';
@@ -5,15 +6,14 @@ import { BackendService } from '../backend.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class HomeComponent implements OnInit {
-  home: string;
-  homeDetails: string;
-  Homes: string;
+  myHTML ='';
 
   ngOnInit(): void {
-    this.backendService.getHome();
+    this.myHTML = this.backendService.getHome();
     
   }
   constructor (private backendService: BackendService) {};
